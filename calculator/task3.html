@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task3.css">
+    <title>Calculator</title>
+</head>
+<style>
+body{
+    display: flex;
+    justify-content: center;
+            align-items: center;
+        }
+        .calculator{
+            background-color:  rgb(157, 253, 157);
+            border-radius: 15px;
+            width: 600px;
+            margin-left:320px ;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            background-color: rgb(100, 142, 255);
+            border-radius: 10px;
+            border: 1px solid transparent;
+            font-size: 20px;
+            font-weight: bold;
+        box-shadow: 5px 5px 10px 0px rgba(22, 22, 22, 0.2);
+        }
+        input{
+            height: 100px;
+            width:  555px;
+        box-shadow: 5px 5px 10px 0px rgba(22, 22, 22, 0.2);
+    border: 5px solid black;
+            margin-bottom: 30px;
+            background-color: rgb(173, 172, 172);
+            border-radius: 10px;
+            font-size: 45px;
+        }
+        .page-container{
+            height: 90%;
+            width: 100%;
+            text-align: center;
+        }
+        .mainhead{
+            padding-top: 20px;
+            display:block;
+            text-decoration: underline;
+        }
+        button:hover{
+            background-color: rgb(111, 0, 255);
+        }
+</style>
+<body>
+    <div class="page-container">
+        <div class="calculator">
+            <h1 class="mainhead">
+                Calculator
+            </h1>
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <div class="row">
+                    <button id="clear">C</button>
+                    <button id="square-root">√</button>
+                    <button id="sine">sin</button>
+                    <button id="cosine">cos</button>
+                    <button id="tangent">tan</button>
+                </div>
+                <div class="row">
+                    <button id="seven">7</button>
+                    <button id="eight">8</button>
+                    <button id="nine">9</button>
+                    <button id="divide">/</button>
+                </div>
+                <div class="row">
+                    <button id="four">4</button>
+                    <button id="five">5</button>
+                    <button id="six">6</button>
+                    <button id="multiply">*</button>
+                </div>
+                <div class="row">
+                    <button id="one">1</button>
+                    <button id="two">2</button>
+                    <button id="three">3</button>
+                    <button id="subtract">-</button>
+                </div>
+                <div class="row">
+                    <button id="zero">0</button>
+                    <button id="decimal">.</button>
+                    <button id="equals">=</button>
+                    <button id="add">+</button>
+                </div>
+                <div class="row">
+                    <button id="open-paren">(</button>
+                    <button id="close-paren">)</button>
+                    <button id="natural-log">ln</button>
+                    <button id="common-log">log10</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+        
+function clearDisplay() {
+    document.getElementById('display').value = '';
+}
+
+function calculate() {
+    const display = document.getElementById('display');
+    try {
+        display.value = eval(display.value);
+    } catch (error) {
+        display.value = 'Error';
+    }
+}
+function calculateSquareRoot() {
+    const display = document.getElementById('display');
+    try {
+        display.value = Math.sqrt(eval(display.value));
+    } catch (error) {
+        display.value = 'Error';
+    }
+}
+
+function calculateSine() {
+    const display = document.getElementById('display');
+    try {
+        display.value = Math.sin(eval(display.value));
+    } catch (error) {
+        display.value = 'Error';
+    }
+}
+
+function calculateCosine() {
+    const display = document.getElementById('display');
+    try {
+        display.value = Math.cos(eval(display.value));
+    } catch (error) {
+        display.value = 'Error';
+    }
+}
+
+function calculateTangent() {
+    const display = document.getElementById('display');
+    try {
+        display.value = Math.tan(eval(display.value));
+    } catch (error) {
+        display.value = 'Error';
+    }
+}
+
+function calculateNaturalLog() {
+    const display = document.getElementById('display');
+    try {
+        display.value = Math.log(eval(display.value));
+    } catch (error) {
+        display.value = 'Error';
+    }
+}
+
+function calculateCommonLog() {
+    const display = document.getElementById('display');
+    try {
+        display.value = Math.log10(eval(display.value));
+    } catch (error) {
+        display.value = 'Error';
+    }
+}
+document.getElementById('clear').addEventListener('click', clearDisplay);
+document.getElementById('equals').addEventListener('click', calculate);
+
+document.getElementById('square-root').addEventListener('click', calculateSquareRoot);
+document.getElementById('sine').addEventListener('click', calculateSine);
+document.getElementById('cosine').addEventListener('click', calculateCosine);
+document.getElementById('tangent').addEventListener('click', calculateTangent);
+document.getElementById('natural-log').addEventListener('click', calculateNaturalLog);
+document.getElementById('common-log').addEventListener('click', calculateCommonLog);
+
+const buttons = document.querySelectorAll('button:not(#clear):not(#equals):not(#square-root):not(#sine):not(#cosine):not(#tangent):not(#natural-log):not(#common-log)');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        document.getElementById('display').value += button.textContent;
+    });
+});
+    </script>
+</body>
+</html>
