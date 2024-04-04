@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task2.css">
+    <script src="task2.js"></script>
+</head>
+<body>
+    <div  class="head">
+    <h1>Increase Your Productivity!!</h1>
+    <p>If you record all your tasks in a to-do list, you can easily review the list and prioritize the most important tasks. Why waste time on trivial activities when there are important matters that need your attention? One study, conducted by the Harvard Business Review, showed that 90% of managers wasted valuable time through poor time management. Your to-do list will help you focus your attention on the most important task of the moment.</p>
+   
+</div> <div class="container">
+        <div id="newtask">
+            <div id="mainhead">
+            <h1>To-Do list</h1>
+            <p>Plan Your Time on Time</p>
+        </div>
+            <input type="text" placeholder="Add Tasks">
+            <button id="push">Add</button>
+        </div>
+        <div id="tasks"></div>
+    </div>
+<div class="last">
+    <div class="info">
+    <h1>
+        Why To maintain To-Do?
+    </h1>
+    <ul>
+        <br>
+        <li>Increases Productivity</li><br>
+        <li>Provides motivation</li><br>
+        <li>Improves memory</li><br>
+        <li>Reduces stress</li><br>
+        <li>Allows for more personal time
+        </li><br>
+        <li>
+            Reduces anxiety and improves mental health</li>
+            <br>
+            <li>Provides a sense of accomplishment</li>
+    </ul>
+    
+</div>
+<img src="/head-674132_1280 (1).jpg" alt="">
+</div>
+</body>
+<script>document.querySelector('#push').onclick = function(){
+    if(document.querySelector('#newtask input').value.length == 0){
+        alert("Kindly Enter Task Name!!!!")
+    }
+
+    else{
+        document.querySelector('#tasks').innerHTML += `
+            <div class="task">
+                <span id="taskname">
+                    ${document.querySelector('#newtask input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+    }
+}</script>
+</html>
