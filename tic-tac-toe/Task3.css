@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(247, 255, 255);
+}
+.rules{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+#rulebook{
+    width: 42%;
+    padding: auto;
+    margin-right: 140px;
+    padding-left: 10px;
+    height: 400px;
+    padding-right: 10px;
+    border-radius:10px;
+    background-color:bisque;
+}
+.howto{
+    width: 42%;
+display: inline-block;
+    padding-left: 10px;
+    height: 400px;
+    padding-right: 10px;
+    border-radius:10px;
+    background-color:bisque;
+}
+.howto h1,#rulebook h1{
+    text-align: center;
+    text-decoration: underline;
+}
+h1 {
+	color: rgb(0, 0, 0);
+	margin-bottom: -5px;
+    text-decoration: underline;
+}
+p {
+	margin-bottom: -10px;
+}
+.ui {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.row {
+	display: flex;
+}
+.cell {
+	border: none;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+}
+.cell:active {
+	outline: none;
+}
+#b1{
+	border-bottom: 1px solid rgb(128, 128, 128);
+	border-right: 1px solid gray;
+}
+
+#b2 {
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+#b3 {
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+#b4 {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+}
+	
+#b5 {
+	border: 1px solid gray;
+}
+
+#b6 {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+#b7 {
+	border-top: 1px solid gray;
+	border-right: 1px solid gray;
+}
+
+#b8 {
+	border-top: 1px solid gray;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+#b9 {
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+}
+#but {
+	box-sizing: border-box;
+	width: 95px;
+	height: 40px;
+	border: 1px solid transparent;
+	margin-left: auto;
+	border-radius: 8px;
+	font-family: Verdana,
+		Geneva, Tahoma, sans-serif;
+
+	background-color: rgb(44, 195, 255);
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+	cursor: pointer;
+}
+#print {
+	font-family: Verdana,
+		Geneva, Tahoma, sans-serif;
+	color:  rgb(44, 195, 255);
+	font-size: 20px;
+}
+
+#main {
+	text-align: center;
+}
+
+#ins {
+	font-family: Verdana,Geneva,
+					Tahoma, sans-serif;
+	color:  rgb(44, 195, 255);
+}

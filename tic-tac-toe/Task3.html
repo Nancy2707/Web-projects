@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="task3.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="main">
+      <h1>TIC TAC TOE</h1>
+      <p id="ins">
+        Game starts by just Tap on box<br /><br />First Player starts with
+        <b>X </b>And Second Player with
+        <b>O</b>
+        <br /><br />
+        <b
+          >The player to get 3 of her marks in a row (up, down, across, or
+          diagonally) is the winner.</b
+        >
+      </p>
+      <br /><br />
+      <div class="ui">
+        <div class="row">
+          <input
+            type="text"
+            id="b1"
+            class="cell"
+            onclick="myfunc_3(); myfunc();"
+            readonly
+          />
+          <input
+            type="text"
+            id="b2"
+            class="cell"
+            onclick="myfunc_4(); myfunc();"
+            readonly
+          />
+          <input
+            type="text"
+            id="b3"
+            class="cell"
+            onclick="myfunc_5(); myfunc();"
+            readonly
+          />
+        </div>
+        <div class="row">
+          <input
+            type="text"
+            id="b4"
+            class="cell"
+            onclick="myfunc_6(); myfunc();"
+            readonly
+          />
+          <input
+            type="text"
+            id="b5"
+            class="cell"
+            onclick="myfunc_7(); myfunc();"
+            readonly
+          />
+          <input
+            type="text"
+            id="b6"
+            class="cell"
+            onclick="myfunc_8(); myfunc();"
+            readonly
+          />
+        </div>
+        <div class="row">
+          <input
+            type="text"
+            id="b7"
+            class="cell"
+            onclick="myfunc_9(); myfunc();"
+            readonly
+          />
+          <input
+            type="text"
+            id="b8"
+            class="cell"
+            onclick="myfunc_10();myfunc();"
+            readonly
+          />
+          <input
+            type="text"
+            id="b9"
+            class="cell"
+            onclick="myfunc_11();myfunc();"
+            readonly
+          />
+        </div>
+      </div>
+      <br /><br /><br />
+
+      <button id="but" onclick="myfunc_2()">RESET</button>
+      <br /><br />
+      <p id="print"></p>
+    </div>
+    <div class="rules">
+        <div  id="rulebook">
+          <h1>Rules</h1>
+      <p>
+        Both "X" and "O", a pair of players, are needed to play.
+
+        <br />
+        <br />
+        The playing field consists of a predetermined grid into which players
+        will insert their tokens to win control of individual cells.
+        <br />
+        <br />
+
+        Players take turns going first, with "X" being the norm.
+        <br />
+        <br />
+
+        The objective is to win by controlling three adjacent cells in a row,
+        which might be horizontal, vertical, or diagonal.
+        <br />
+        <br />
+
+        The grid cannot expand to accommodate more sides.
+        <br />
+        <br />
+
+        The game is done when the grid is full, or one player gets three in a
+        row.
+      </p>
+    </div>
+      <div class="howto">
+    <h1>
+        How to Play Tic-Tac-Toe
+    </h1>    
+<br>
+<br>
+The game is played on a grid that's 3 squares by 3 squares.
+<br>
+<br>
+You are X , your friend (or the computer in this case) is O . Players take turns putting their marks in empty squares.
+<br>
+<br>
+The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
+      </div>
+    </div>
+  </body>
+</html>
