@@ -1,0 +1,75 @@
+<!-- Index.html -->
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Live Coding Editor</title> 
+	<link rel="stylesheet"
+		type="text/css"
+		href="main.css"> 
+</head> 
+
+<body> 
+	<div id="editor"> 
+		<div class="code-section"> 
+			<label for="htmlCode"> 
+				HTML Code: 
+			</label> 
+			<textarea id="htmlCode"
+					class="code"
+					placeholder= 
+						"Enter HTML code here"> 
+			</textarea> 
+		</div> 
+		<div class="code-section"> 
+			<label for="cssCode"> 
+				CSS Code: 
+			</label> 
+			<textarea id="cssCode"
+					class="code"
+					placeholder= 
+						"Enter CSS code here"> 
+			</textarea> 
+		</div> 
+		<div class="code-section"> 
+			<label for="jsCode"> 
+				JavaScript Code: 
+			</label> 
+			<textarea id="jsCode"
+					class="code"
+					placeholder= 
+						"Enter JavaScript code here"> 
+			</textarea> 
+		</div> 
+		<div class="code-section"> 
+			<label for="output"> 
+				Output: 
+			</label> 
+			<div id="output"
+				class="code"> 
+			</div> 
+		</div> 
+		<div id="menu"> 
+			<button id="runButton"> 
+				Run Code 
+			</button> 
+			<button id="clearButton"> 
+				Clear Code 
+			</button> 
+			<a id="downloadButton"
+			download="code.zip"> 
+				Download Code 
+			</a> 
+		</div> 
+	</div> 
+	<iframe id="preview"></iframe> 
+	<script src="main.js"></script> 
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"> 
+	</script> 
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"> 
+	</script> 
+</body> 
+
+</html>
