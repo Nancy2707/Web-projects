@@ -1,0 +1,7 @@
+div {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    font-weight: lighter;
+    align-items: center;
+}
