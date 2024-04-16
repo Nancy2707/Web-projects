@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-taking App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NOTE TAKING APP</h1>
+        <div class="note-list" id="note-list">
+            <!-- Notes will be displayed here -->
+        </div>
+        <div class="note-editor">
+            <input type="text" id="note-title" placeholder="Title">
+            <textarea id="note-content" placeholder="Enter your note"></textarea>
+            <button onclick="saveNote()">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

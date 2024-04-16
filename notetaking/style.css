@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #f5f5f5, #e99292);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background:linear-gradient(rgb(116, 116, 212),navy);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.note-list {
+    margin-bottom: 2rem;
+}
+
+.note {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.note-content {
+    margin: 0;
+    color: #ffffff;
+}
+
+.note-editor {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+#note-title {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#note-content {
+    padding: 0.5rem;
+    flex-grow: 1;
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+button {
+    background-color: #000000;
+    align-self: center;
+    width: 200px;
+    margin: 30px;
+    height: 50px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: #444;
+}
