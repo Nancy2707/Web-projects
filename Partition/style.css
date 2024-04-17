@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    /* width: 100%; */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+input[type="number"] {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    width: 50px;
+    border: 1px solid #ccc;
+    transition: border-color 0.5s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #00b3b3;
+    box-shadow: 0 0 2px 1px #00b3b3;
+}
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.input-container label {
+    font-weight: bold;
+}
+
+.input-container input {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.partitions-container {
+    /* background-color: aqua; */
+    font-weight:bold;
+    font-size: 20px;
+    margin-top: 20px;
+    padding:  0% 43%;
+}
