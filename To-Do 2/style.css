@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(135deg, rgb(84, 84, 224), rgb(230, 76, 59));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px;
+}
+
+.headlines h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: orangered;
+    /* text-decoration: underline; */
+}
+
+.headlines p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: orangered;
+    font-weight: bold;
+}
+
+.todo-app ul {
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.todo-app ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.addTask {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.addTask input {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    width: 75%;
+    padding: 10px;
+    margin-left: 0;
+    outline: none;
+    border-bottom: 2px solid #ddd;
+}
+
+.addTask button {
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    background-color: orangered;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ul li span {
+    cursor: pointer;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+ul li p{
+    color: orangered;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .headlines h1 {
+        font-size: 2em;
+    }
+
+    .headlines p {
+        font-size: 1em;
+    }
+
+    .addTask input {
+        width: 60%;
+    }
+
+    .addTask button {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: rgb(255, 32, 32);
+    color: black;
+    font-size: 15px;
+  }
+  :root {
+    --calendar-date-background-color: lightblue;
+  }
+  
+  /* Apply the custom background color to the part of the calendar */
+  input[type="date"]::part(cell) {
+    background-color: var(--calendar-date-background-color);
+  }
